@@ -24,6 +24,9 @@ then
       echo -e "\nWelcome back, $STORED_USERNAME! You have played $GAMES_PLAYED games, and your best game took $BEST_GAME guesses.\n"
     done
   fi
+  echo "Guess the secret number between 1 and 1000:"
+  read USER_GUESS
+  echo "$USER_GUESS"
 else
   echo "Sorry, this name is not allowed, try please another one"
 fi
