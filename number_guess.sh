@@ -2,7 +2,7 @@
 #Number Guessing Game
 echo -e "\n\n~~Welcome to Number Guessing Game~~\n"
 #query database
-PSQL="psql --username=freecodecamp --dbname=number_guessing_game_db -AXqtc"
+PSQL="psql --username=freecodecamp --dbname=number_guessing_game_db -Atc"
 #read username
 echo "Enter your username:"
 read USERNAME
@@ -32,6 +32,7 @@ fi
 #start game
 # generate a random number between 1 and 1000
 SECRET_NUMBER=$(( $RANDOM % 1001 ))
+echo $SECRET_NUMBER
 #get user's number
 echo -e "\nGuess the secret number between 1 and 1000:"
 read USER_GUESS
