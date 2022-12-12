@@ -2,12 +2,20 @@
 #~~Project DB~~
 
 #query DB
-PSQL="psql --username=freecodecamp --dbname=number_guessing_game -t --no-align -c"
+PSQL="psql --username=freecodecamp --dbname=number_guessing_game_db -t --no-align -c"
 
-echo "$($PSQL "CREATE TABLE IF NOT EXISTS number_guessing_game_users(
+echo "$($PSQL "DROP TABLE IF EXISTS users CASCADE;")"
+echo "$($PSQL "DROP TABLE IF EXISTS games CASCADE;")"
+
+echo "$($PSQL "CREATE TABLE IF NOT EXISTS users(
   user_id SERIAL PRIMARY KEY,
   username VARCHAR(22) NOT NULL UNIQUE,
-  games_played INT NOT NULL DEFAULT 0,
-  best_game INT NOT NULL DEFAULT 0
+  date_created TEXT DEFAULT Now()::date
 );")"
-echo "INSERT INTO number_guessing_game_users(username) VALUES('Mike');"
+
+echo "$($PSQL "CREATE TABLE IF NOT EXISTS games(
+  game_id SERIAL PRIMARY KEY,
+  user_id INT,
+  result INT NOT NULL DEFAULT 0,
+  CONSTRAINT fk_user_id FOREIGN KEY(user_id) REFERENCES users(user_id)
+);")"
