@@ -32,7 +32,6 @@ fi
 #start game
 # generate a random number between 1 and 1000
 SECRET_NUMBER=$(( $RANDOM % 1001 ))
-echo $SECRET_NUMBER
 #get user's number
 echo -e "\nGuess the secret number between 1 and 1000:"
 read USER_GUESS
