@@ -32,22 +32,22 @@
   </ol>
 <h2>Result</h2>
 <div>
-  <p>Element with atomic number 10 was output to the terminal</p>
-  <img src="https://raw.githubusercontent.com/M1S7K/freeCodeCamp-Periodic-Table-Database/main/result-screenshots/element%20example.png" width="380">
+  <p>The secret number is guessed</p>
+  <img src="https://raw.githubusercontent.com/M1S7K/freeCodeCamp-Number-Guessing-Game/main/Result%20screenshots/Print%20from%20the%20script.png" width="380">
 </div>
 <div>
 <div>
-  <p>Required table of elements to complete the project</p>
-  <img src="https://raw.githubusercontent.com/M1S7K/freeCodeCamp-Periodic-Table-Database/main/result-screenshots/table.png" width="380">
+  <p>Data from the database</p>
+  <img src="https://raw.githubusercontent.com/M1S7K/freeCodeCamp-Number-Guessing-Game/main/Result%20screenshots/Database.png" width="380">
 </div>
 <div>
   <p>All the necessary steps were completed</p>
-  <img src="https://raw.githubusercontent.com/M1S7K/freeCodeCamp-Periodic-Table-Database/main/result-screenshots/completed.png" width="380">
+  <img src="https://raw.githubusercontent.com/M1S7K/freeCodeCamp-Number-Guessing-Game/main/Result%20screenshots/Completed.png" width="380">
 </div>
 <h2>Possible options for the future project improvement</h2>
 <ul>
-  <li>Add the entire periodic table</li>
-  <li>Case-insensitive serch</li>
+  <li>Display 5 Best players from database</li>
+  <li>After 10 tries reveal the hintt</li>
 </ul>
 <h2>Helpful Links</h2>
 <ol>
