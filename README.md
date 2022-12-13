@@ -47,7 +47,7 @@
 <h2>Possible options for the future project improvement</h2>
 <ul>
   <li>Display 5 Best players from database</li>
-  <li>After 10 tries reveal the hintt</li>
+  <li>After 10 tries reveal the hint</li>
 </ul>
 <h2>Helpful Links</h2>
 <ol>
